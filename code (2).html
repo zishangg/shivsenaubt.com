@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Sena UBT - Vinod Pawar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for Shiv Sena orange/gold theme */
+        .saffron-bg {
+            background-color: #FF9933;
+        }
+        .saffron-text {
+            color: #FF9933;
+        }
+        .blue-bg {
+            background-color: #000080;
+        }
+        .blue-text {
+            color: #000080;
+        }
+        
+        .logo-container {
+            border: 3px solid #FF9933;
+            transition: all 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .member-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .floating-nav {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+        
+        .highlight-box {
+            position: relative;
+        }
+        
+        .highlight-box::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #FF9933, transparent);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="saffron-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="logo-container rounded-full p-2 mr-4 bg-white">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3337588d-e67e-4488-b643-47cf9b079a24.png" alt="Official Shiv Sena (UBT) party logo - tiger emblem on saffron background" class="w-16 h-16" />
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold blue-text">शिवसेना (उद्धव बाळासाहेब ठाकरे)</h1>
+                    <h2 class="text-lg md:text-xl font-semibold blue-text">Vinod Pawar - City Head</h2>
+                </div>
+            </div>
+            
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-white hover:underline font-medium text-lg highlight-box">Home</a></li>
+                    <li><a href="#about" class="text-white hover:underline font-medium text-lg">About</a></li>
+                    <li><a href="#gallery" class="text-white hover:underline font-medium text-lg">Gallery</a></li>
+                    <li><a href="#join" class="text-white hover:underline font-medium text-lg">Join</a></li>
+                    <li><a href="#contact" class="text-white hover:underline font-medium text-lg">Contact</a></li>
+                    <li><a href="#login" class="text-white hover:underline font-medium text-lg">Admin</a></li>
+                    <li><a href="#login" class="text-white hover:underline font-medium text-lg">Admin</a></li>
+                </ul>
+            </nav>
+            
+            <button class="md:hidden text-white text-2xl focus:outline-none" id="mobileMenuBtn">
+                ☰
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-blue-900 py-2" id="mobileMenu">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="#home" class="text-white hover:underline font-medium">Home</a></li>
+                <li><a href="#about" class="text-white hover:underline font-medium">About</a></li>
+                <li><a href="#gallery" class="text-white hover:underline font-medium">Gallery</a></li>
+                <li><a href="#join" class="text-white hover:underline font-medium">Join</a></li>
+                <li><a href="#contact" class="text-white hover:underline font-medium">Contact</a></li>
+                    <li><a href="#login" class="text-white hover:underline font-medium">Admin</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-blue-900 text-white py-16 md:py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ff49fd51-7a4a-4b25-88e0-f7c0028521d6.png" alt="Indian national flag waving in the wind with Shivaji Maharaj statue in background" class="w-full h-full object-cover" />
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">शिव सेना नावाने, महाराष्ट्राच्या सेवेने!</h1>
+                    <p class="text-xl mb-6">Join Vinod Pawar, City Head of Shiv Sena (UBT) to work for the development of our city and state.</p>
+                    <div class="flex space-x-4">
+                        <a href="#join" class="saffron-bg text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-600 transition">Join Now</a>
+                        <a href="#about" class="bg-white blue-text px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbd8e3e2-2f96-4343-a11c-894747fe713c.png" alt="Vinod Pawar addressing a gathering of Shiv Sena supporters in Maharashtra" class="w-full rounded-lg shadow-xl" />
+                        <div class="absolute -bottom-4 -right-4 saffron-bg text-white px-4 py-2 rounded-lg">
+                            Vinod Pawar - City Head
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center blue-text">About Us</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold saffron-text mb-4">Our Mission</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">Shiv Sena (UBT) is committed to upholding the ideals of Chhatrapati Shivaji Maharaj and fighting for the rights of Marathi people. Under the leadership of Shri Uddhav Thackeray, we work tirelessly for the betterment of Maharashtra and its people.</p>
+                    
+                    <h3 class="text-2xl font-bold saffron-text mb-4">Vinod Pawar's Work</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">As City Head, Vinod Pawar has led numerous initiatives for local development, youth empowerment, and social welfare. His dedication to public service has brought positive change to our community.</p>
+                    
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-blue-100 text-blue-900 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-700">100+ Development Projects Initiated</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 text-blue-900 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-700">5000+ Active Members in Our Network</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/26bc0a66-c87d-46d6-baa9-7ebad7bacf5e.png" alt="Group photo of Shiv Sena UBT members in traditional saffron scarves at a political rally" class="w-full rounded-lg shadow-lg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center blue-text">Our Work Gallery</h2>
+            
+            <div class="mb-8 flex justify-center space-x-4">
+                <button class="gallery-filter px-4 py-2 rounded-full saffron-bg text-white font-medium" data-filter="all">All</button>
+                <button class="gallery-filter px-4 py-2 rounded-full bg-white text-blue-900 font-medium" data-filter="photos">Photos</button>
+                <button class="gallery-filter px-4 py-2 rounded-full bg-white text-blue-900 font-medium" data-filter="videos">Videos</button>
+                <button class="gallery-filter px-4 py-2 rounded-full bg-white text-blue-900 font-medium" data-filter="events">Events</button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-container">
+                <!-- Photos will be loaded here -->
+                <div class="gallery-item photos rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f92d0463-edf0-4525-862b-7174d1a8b3e4.png" alt="Vinod Pawar inaugurating a new water supply project in the city" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Water Project Inauguration</h3>
+                        <p class="text-gray-600">12 March 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item videos rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7aa0c33f-96d5-4322-9cce-1e3281e09b4a.png" alt="Thumbnail for video: Vinod Pawar speech about youth employment programs" class="w-full h-48 object-cover" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white bg-opacity-80 rounded-full p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Youth Employment Program</h3>
+                        <p class="text-gray-600">5 March 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f12c534-a4b3-4bdb-a197-a9c14154c85a.png" alt="Large gathering at Shiv Sena UBT's public meeting with enthusiastic crowd" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Public Meeting</h3>
+                        <p class="text-gray-600">28 February 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item photos rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb9eb6a3-75a3-4343-9731-d4a0ebbc1b50.png" alt="Vinod Pawar distributing school supplies to children in his constituency" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">School Supplies Distribution</h3>
+                        <p class="text-gray-600">20 February 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70ff1b4a-e1b9-4806-816c-268c812bbe96.png" alt="Cultural program organized by Shiv Sena UBT with traditional performers" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Cultural Program</h3>
+                        <p class="text-gray-600">15 February 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item videos rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e68744bf-2e3f-4dc7-b694-1785a962c4d4.png" alt="Thumbnail for video: Road construction progress update by Vinod Pawar" class="w-full h-48 object-cover" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white bg-opacity-80 rounded-full p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Road Construction Update</h3>
+                        <p class="text-gray-600">10 February 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center blue-text">Join Shiv Sena (UBT)</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold saffron-text mb-4">Why Join Us?</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">By becoming a member of Shiv Sena (UBT), you become part of a movement dedicated to serving the people of Maharashtra. We work together to address local issues, implement development projects, and uphold our Marathi culture and values.</p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold text-lg saffron-text mb-3">Member Benefits:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Opportunity to serve your community</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Regular updates on party activities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Invitations to events and programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 mr-2 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Platform to voice your concerns</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold saffron-text mb-6 text-center">Website Configuration</h3>
+                    <div class="mb-6 p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Domain Settings</h4>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Primary Domain</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="yourdomain.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Subdomain</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="shivsena">
+                        </div>
+                        <button class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700">Save Domain Settings</button>
+                    </div>
+                    <h3 class="text-2xl font-bold saffron-text mb-6 text-center">Member Registration</h3>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Website Domain</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" placeholder="yourdomain.com">
+                    </div>
+                        <form id="memberForm" class="space-y-6">
+                            <div>
+                                <label for="fullName" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="address" class="block text-gray-700 mb-2">Address</label>
+                                <textarea id="address" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white" required></textarea>
+                            </div>
+                            
+                            <div>
+                                <label for="ward" class="block text-gray-700 mb-2">Ward/Area</label>
+                                <input type="text" id="ward" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white" required>
+                            </div>
+                            <div>
+                                <label for="profession" class="block text-gray-700 mb-2">Profession</label>
+                                <input type="text" id="profession" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron bg-white">
+                            </div>
+                            
+                            <div class="pt-2">
+                                <button type="submit" class="w-full saffron-bg text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                                    Submit Application
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Dashboard (Admin Section) -->
+    <section id="members" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center blue-text">Members Dashboard</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                    <h3 class="text-xl font-bold">Registered Members</h3>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <input type="text" placeholder="Search members..." class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-saffron">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200" id="membersTable">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contact</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ward</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Joined On</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200" id="membersTableBody">
+                            <!-- Members will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Management (Admin Section) -->
+    <section id="contentManagement" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center blue-text">Content Management</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold saffron-text mb-4">Upload New Content</h3>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition" id="uploadPhotoBtn">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg">Upload Photo</h4>
+                            <input type="file" id="photoUpload" class="hidden" accept="image/*">
+                        </div>
+                        
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition" id="uploadVideoBtn">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg">Upload Video</h4>
+                            <input type="file" id="videoUpload" class="hidden" accept="video/*">
+                        </div>
+                        
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition" id="writeMessageBtn">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg">Write Message</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="messageEditor" class="bg-white rounded-lg shadow-lg p-6 mb-8 hidden">
+                <h4 class="font-bold text-xl mb-4">Compose New Message</h4>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message Title</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" id="messageTitle">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message Content</label>
+                        <textarea rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" id="messageContent"></textarea>
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100" id="cancelMessage">Cancel</button>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700" id="publishMessage">Publish</button>
+                        <button class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700" id="publishWebsite">Publish Website</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Contact Us</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold mb-4">Get In Touch</h3>
+                    <p class="mb-6 leading-relaxed">For any inquiries, suggestions, or assistance, please feel free to reach out to us through any of the following channels.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm">Shiv Sena (UBT) Office</p>
+                                <p class="font-medium">123 Shivaji Road, Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm">Phone Number</p>
+                                <p class="font-medium">+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm">Email Address</p>
+                                <p class="font-medium">vinod.pawar@shivsenaubt.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold blue-text mb-6">Send Us a Message</h3>
+                        <form class="space-y-6" id="contactForm">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required></textarea>
+                            </div>
+                            
+                            <div class="pt-2">
+                                <button type="submit" class="w-full saffron-bg text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section (Hidden by default) -->
+    <a id="login"></a>
+    <a id="login"></a>
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold blue-text">Admin Login</h3>
+                    <button id="closeLoginModal" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                
+                <form class="space-y-6" id="loginForm">
+                    <div>
+                        <label for="username" class="block text-gray-700 mb-2">Username</label>
+                        <input type="text" id="username" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required>
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="block text-gray-700 mb-2">Password</label>
+                        <input type="password" id="password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-saffron" required>
+                    </div>
+                    
+                    <div class="pt-2">
+                        <button type="submit" class="w-full saffron-bg text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition">
+                            Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Button -->
+    <div class="floating-nav">
+        <button id="adminLoginBtn" class="bg-blue-900 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition transform hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="logo-container rounded-full p-1 mr-3 bg-white">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3133030-c58e-42c3-ab79-5b921e36d2ee.png" alt="Small Shiv Sena UBT party logo" class="w-10 h-10" />
+                        </div>
+                        <h2 class="text-xl font-bold">शिवसेना (उद्धव बाळासाहेब ठाकरे)</h2>
+                    </div>
+                    <p class="mt-2 text-blue-200">Serving Maharashtra Since 1966</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-blue-200">© 2024 Shiv Sena (UBT). All Rights Reserved.</p>
+                    
+                    <div class="mt-4 md:mt-0">
+                        <ul class="flex space-x-6">
+                            <li><a href="#" class="text-blue-200 hover:text-white">Terms of Service</a></li>
+                            <li><a href="#" class="text-blue-200 hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-blue-200 hover:text-white">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Gallery Filter
+        const galleryFilters = document.querySelectorAll('.gallery-filter');
+        galleryFilters.forEach(filter => {
+            filter.addEventListener('click', function() {
+                // Remove active class from all buttons
+                galleryFilters.forEach(f => f.classList.remove('saffron-bg', 'text-white'));
+                galleryFilters.forEach(f => f.classList.add('bg-white', 'text-blue-900'));
+                
+                // Add active class to clicked button
+                this.classList.remove('bg-white', 'text-blue-900');
+                this.classList.add('saffron-bg', 'text-white');
+                
+                const filterValue = this.getAttribute('data-filter');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Member Form Submission
+        document.getElementById('memberForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                ward: document.getElementById('ward').value,
+                joinedDate: new Date().toLocaleDateString()
+            };
+            
+            // In a real application, you would send this data to a server
+            console.log('Form submitted:', formData);
+            
+            // Store in localStorage for demo purposes
+            let members = JSON.parse(localStorage.getItem('members')) || [];
+            members.push(formData);
+            localStorage.setItem('members', JSON.stringify(members));
+            
+            // Show success message
+            alert('Thank you for joining Shiv Sena (UBT)! We will contact you soon.');
+            this.reset();
+        });
+        
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send this data to a server
+            console.log('Contact form submitted:', {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            });
+            
+            // Show success message
+            alert('Thank you for your message. We will get back to you soon.');
+            this.reset();
+        });
+        
+        // Admin Login Functionality
+        document.getElementById('adminLoginBtn').addEventListener('click', function() {
+            document.getElementById('loginModal').classList.remove('hidden');
+        });
+        
+        document.getElementById('closeLoginModal').addEventListener('click', function() {
+            document.getElementById('loginModal').classList.add('hidden');
+        });
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple demo authentication
+            if (username === 'vinodpawar' && password === 'shivsenaubt2024') {
+                // Hide login modal
+                document.getElementById('loginModal').classList.add('hidden');
+                
+                // Show admin sections
+                document.getElementById('members').classList.remove('hidden');
+                document.getElementById('contentManagement').classList.remove('hidden');
+                
+                // Load members data
+                loadMembersData();
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+        });
+        
+        // Photo Upload Button
+        document.getElementById('uploadPhotoBtn').addEventListener('click', function() {
+            document.getElementById('photoUpload').click();
+        });
+        
+        document.getElementById('photoUpload').addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                alert('Photo uploaded successfully (demo). In a real application, this would be sent to a server.');
+                // Here you would typically upload to a server and then add to the gallery
+            }
+        });
+        
+        // Video Upload Button
+        document.getElementById('uploadVideoBtn').addEventListener('click', function() {
+            document.getElementById('videoUpload').click();
+        });
+        
+        document.getElementById('videoUpload').addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                alert('Video uploaded successfully (demo). In a real application, this would be sent to a server.');
+                // Here you would typically upload to a server and then add to the gallery
+            }
+        });
+        
+        // Message Button
+        document.getElementById('writeMessageBtn').addEventListener('click', function() {
+            document.getElementById('messageEditor').classList.remove('hidden');
+        });
+        
+        document.getElementById('cancelMessage').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('messageEditor').classList.add('hidden');
+        });
+        
+        document.getElementById('publishMessage').addEventListener('click', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('messageTitle').value;
+            const content = document.getElementById('messageContent').value;
+            
+            if (title && content) {
+                alert('Message published successfully (demo):\n\n' + title + '\n\n' + content);
+                document.getElementById('messageEditor').classList.add('hidden');
+                document.getElementById('messageTitle').value = '';
+                document.getElementById('messageContent').value = '';
+            } else {
+                alert('Please enter both title and content.');
+            }
+        });
+        
+        // Function to load members data for admin
+        function loadMembersData() {
+            const members = JSON.parse(localStorage.getItem('members')) || [];
+            const tableBody = document.getElementById('membersTableBody');
+            tableBody.innerHTML = '';
+            
+            members.forEach((member, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${index + 1}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${member.fullName}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <div>${member.email}</div>
+                        <div>${member.phone}</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${member.ward}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${member.joinedDate}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <button class="text-blue-600 hover:text-blue-900" onclick="viewMember(${index})">View</button>
+                        <button class="text-red-600 hover:text-red-900 ml-2" onclick="deleteMember(${index})">Delete</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        // These would be defined in a real implementation
+        window.viewMember = function(index) {
+            const members = JSON.parse(localStorage.getItem('members')) || [];
+            const member = members[index];
+            alert(`Member Details:\n\nName: ${member.fullName}\nEmail: ${member.email}\nPhone: ${member.phone}\nAddress: ${member.address}\nWard: ${member.ward}\nJoined: ${member.joinedDate}`);
+        };
+        
+        window.deleteMember = function(index) {
+            if (confirm('Are you sure you want to delete this member?')) {
+                const members = JSON.parse(localStorage.getItem('members')) || [];
+                members.splice(index, 1);
+                localStorage.setItem('members', JSON.stringify(members));
+                loadMembersData();
+            }
+        };
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
