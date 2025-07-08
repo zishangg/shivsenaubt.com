@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अभय योजना - मालमत्ता कर सवलत</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline-bar {
+            position: absolute;
+            width: 4px;
+            background-color: #4facfe;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item:nth-child(odd) {
+            padding-right: 50%;
+            text-align: right;
+        }
+        .timeline-item:nth-child(even) {
+            padding-left: 50%;
+            text-align: left;
+        }
+        .benefit-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #4facfe;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .marquee {
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Notification Bar -->
+    <div class="bg-yellow-500 text-white py-2 px-4 text-center">
+        <div class="marquee inline-block whitespace-nowrap">
+            📢 अंतिम तारख: १९ जुलै २०२५ | अर्ज करण्यासाठी नगरपालिका कार्यालय भेट द्या 📢
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <img src="https://placehold.co/100x100" alt="Municipal Corporation Logo" class="mx-auto h-20 w-20 mb-6 rounded-full border-4 border-white">
+            <h1 class="text-4xl font-bold mb-4">अभय योजना</h1>
+            <p class="text-xl mb-8">मालमत्ता कर थकबाकीदारांसाठी व्याजमाफीची सुवर्णसंधी</p>
+            <div class="bg-white text-blue-600 inline-block px-6 py-3 rounded-full shadow-lg font-bold">
+                जाहीर दिनांक: २० जून २०२५
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Announcement -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">मालमत्ता करावरील व्याज माफ</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    प्रलंबित मालमत्ता कर न भरल्यामुळे आर्थिक अडचणीत सापडलेल्या नागरिकांसाठी नगरपरिषद प्रशासनाने मोठा दिलासा दिला आहे.
+                    थकबाकीदारांच्या मालमत्ता करावर आकारण्यात आलेले दंडात्मक व्याज (शास्ती) आता माफ करण्यात येणार आहे.
+                </p>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 text-left">
+                    <p class="font-bold text-blue-800">📅 अर्ज तारख: २० जून २०२५ ते १९ जुलै २०२५</p>
+                    <p class="text-blue-700">🏛️ अर्ज स्थान: नगरपालिका कार्यालय, नोंदणी विभाग</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">योजनेचा प्रवास</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-bar"></div>
+                
+                <div class="timeline-item relative mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="absolute top-0 -ml-14 font-bold bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center">1</div>
+                        <p class="text-gray-500">१३ जानेवारी २०२५</p>
+                        <h3 class="text-xl font-semibold mb-2">उपोषण आंदोलन</h3>
+                        <p class="text-gray-600">शहरप्रमुख विनोद पवार यांनी प्रभाग क्र. २० मधील नागरिकांच्या समस्यांसंदर्भात उपोषण केले.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item relative mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="absolute top-0 -mr-14 right-0 font-bold bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center">2</div>
+                        <p class="text-gray-500">फेब्रुवारी २०२५</p>
+                        <h3 class="text-xl font-semibold mb-2">शासनाकडे मागणी</h3>
+                        <p class="text-gray-600">मुख्याधिकारी लघूमा तिवारी यांनी ही मागणी शासनाकडे विचाराधीन ठेवण्याचे आश्वासन दिले.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item relative mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="absolute top-0 -ml-14 font-bold bg-blue-500 text-white rounded-full h-10 w-10 flex items-center justify-center">3</div>
+                        <p class="text-gray-500">२० जून २०२५</p>
+                        <h3 class="text-xl font-semibold mb-2">योजना जाहीर</h3>
+                        <p class="text-gray-600">मुख्याधिकारी शुभम क्यातमवार यांनी 'अभय योजना' जाहीर केली.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">योजनेचे फायदे</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="benefit-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-4xl mb-4">💸</div>
+                    <h3 class="text-xl font-semibold mb-2">संपूर्ण व्याजमाफी</h3>
+                    <p class="text-gray-600">१९ जुलैपूर्वी अर्ज करणाऱ्या थकबाकीदारांना व्याजामध्ये संपूर्ण सवलत</p>
+                </div>
+                
+                <div class="benefit-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-4xl mb-4">📋</div>
+                    <h3 class="text-xl font-semibold mb-2">सुलभ प्रक्रिया</h3>
+                    <p class="text-gray-600">साध्या कागदपत्रांसहित अर्ज प्रक्रिया पूर्ण करता येणार</p>
+                </div>
+                
+                <div class="benefit-card bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="text-blue-500 text-4xl mb-4">🕰️</div>
+                    <h3 class="text-xl font-semibold mb-2">३० दिवसांची मुदत</h3>
+                    <p class="text-gray-600">व्याजमाफीचा लाभ घेण्यासाठी पुरेशी वेळ उपलब्ध</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Persons -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">यशस्वी आंदोलनाचे नेतृत्व</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://placehold.co/300x300?text=Vinod+Pawar" alt="Shaharpramukh Vinod Pawar" class="rounded-full h-40 w-40 object-cover mx-auto mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold mb-1">शहरप्रमुख</h3>
+                    <p class="text-gray-700 font-bold">विनोद पवार</p>
+                    <p class="text-gray-600 text-sm mt-2">उपोषण आंदोलनाचे नेतृत्व</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://placehold.co/300x300?text=Sanjay+Deshmukh" alt="Khasiadar Sanjay Bhau Deshmukh" class="rounded-full h-40 w-40 object-cover mx-auto mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold mb-1">खासदार</h3>
+                    <p class="text-gray-700 font-bold">संजय भाऊ देशमुख</p>
+                    <p class="text-gray-600 text-sm mt-2">मार्गदर्शन व शासनासमक्ष मागणी</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://placehold.co/300x300?text=Shubham+Khatamwar" alt="Mukhyadhikari Shubham Khatamwar" class="rounded-full h-40 w-40 object-cover mx-auto mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold mb-1">मुख्याधिकारी</h3>
+                    <p class="text-gray-700 font-bold">शुभम क्यातमवार</p>
+                    <p class="text-gray-600 text-sm mt-2">योजना जाहीर करणारे अधिकारी</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">ही सुवर्णसंधी साधून आपल्या थकबाकीची पूर्तता करा!</h2>
+            <p class="text-xl mb-8">व्याजमाफीचा लाभ घेण्यासाठी १९ जुलै २०२५ पूर्वी अर्ज करा</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                अधिक माहितीसाठी संपर्क करा
+            </button>
+            <div class="mt-8">
+                <p class="font-semibold">📞 नगरपालिका हेल्पलाईन: ०७२३२-२२२२२२</p>
+                <p class="font-semibold">📧 ईमेळ: abhay.yojana@yavatmalmc.gov.in</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="https://placehold.co/150x50?text=Yavatmal+Municipal" alt="Yavatmal Municipal Corporation Logo" class="h-12">
+                    <p class="text-gray-400 mt-2">नगरपालिका प्रशासन, यवतमाळ</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">हमी</a>
+                    <a href="#" class="text-gray-400 hover:text-white">सेवा</a>
+                    <a href="#" class="text-gray-400 hover:text-white">संपर्क</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                © २०२५ यवतमाळ नगरपालिका. सर्व हक्क राखीव.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for the timeline items
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            timelineItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                }, 300 * index);
+            });
+        });
+    </script>
+</body>
+</html>
